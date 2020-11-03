@@ -5,16 +5,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const navBar = document.querySelector(".navbar");
     const darkModeLabel = document.querySelector(".dark-mode-label");
     const mainSection = document.querySelector(".main-section");
+    const skillLabels = document.querySelectorAll(".skill-label");
+    const h3Btns = document.querySelectorAll("h3, h3 a");
+    const html = document.querySelector("html");
 
     darkModeBtn.addEventListener('click', function() {
         if (darkModeBtn.checked) {
             navBar.classList.add("dark-mode");
             darkModeLabel.classList.add("dark-mode");
             mainSection.classList.add("dark-mode");
+            html.classList.add("dark-mode");
+            skillLabels.forEach(function(skillLabel) {
+                skillLabel.classList.add("dark-mode");
+            });
+            h3Btns.forEach(function(h3Btn) {
+                h3Btn.classList.add("dark-mode");
+            });
         }else {
             navBar.classList.remove("dark-mode");
             darkModeLabel.classList.remove("dark-mode");
             mainSection.classList.remove("dark-mode");
+            html.classList.remove("dark-mode");
+            skillLabels.forEach(function(skillLabel) {
+                skillLabel.classList.remove("dark-mode");
+            });
+            h3Btns.forEach(function(h3Btn) {
+                h3Btn.classList.remove("dark-mode");
+            });
         }
     });
 
@@ -31,6 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navBar.classList.add("dark-mode");
             darkModeLabel.classList.add("dark-mode");
             mainSection.classList.add("dark-mode");
+            html.classList.add("dark-mode");
+            skillLabels.forEach(function(skillLabel) {
+                skillLabel.classList.add("dark-mode");
+            });
+            h3Btns.forEach(function(h3Btn) {
+                h3Btn.classList.add("dark-mode");
+            });
         }else if (darkModeValue === true) {
             darkModeValue = false;
             sun.style.display = "none";
@@ -38,6 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navBar.classList.remove("dark-mode");
             darkModeLabel.classList.remove("dark-mode");
             mainSection.classList.remove("dark-mode");
+            html.classList.remove("dark-mode");
+            skillLabels.forEach(function(skillLabel) {
+                skillLabel.classList.remove("dark-mode");
+            });
+            h3Btns.forEach(function(h3Btn) {
+                h3Btn.classList.remove("dark-mode");
+            });
         }
     });
 
@@ -62,6 +93,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // close sidebar when click on body
+    const section = document.querySelector(".main-section");
+    section.addEventListener('click', function() {
+        if (status === true) {
+            sidebarContent.style.visibility = "hidden";
+            sidebarContent.style.opacity = "0";
+            sidebarContent.style.transition = "all .5s ease";
+            burger.classList.remove('open');
+            status = false;
+        }
+    });
+
     // close sidebar when screen resize
     window.addEventListener('resize', function() {
         let screenChange = window.matchMedia("(min-width: 768px)");
@@ -78,6 +121,18 @@ document.addEventListener('DOMContentLoaded', () => {
             moon.style.display = "block";
         }
     });
+
+    // sticky navbar
+    const sticky = navBar.offsetTop;
+    
+    function stickyNavbar() {
+        if (window.pageYOffset >= sticky) {
+            navBar.classList.add("sticky")
+        } else {
+            navBar.classList.remove("sticky");
+        }
+    }
+    window.onscroll = function() {stickyNavbar()};
 
 
 

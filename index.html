@@ -11,18 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&family=Merriweather&family=Spectral+SC&family=Merriweather+Sans:wght@300;400&family=Roboto&family=Source+Code+Pro&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body id="homepage">
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">&lt;hf/&gt;</div>
             <div class="name">Haikhal Fakhreez</div>
 
             <div class="directories">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skill</a>
-                <a href="">Project</a>
-                <a href="">Contact</a>
+                <a href="#homepage">Home</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Project</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="emoji">
                 <!-- <img src="https://img.icons8.com/emoji/48/000000/sun-emoji.png" class="sun"/> -->
@@ -132,24 +132,148 @@
         </div>
             <div>
                 <ul class="sidebar-content">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skill</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#homepage">Home</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
     </nav>
     <section class="main-section">
         
-        <div class="title">
-            <div class="portrait">
-                <img src="Images/portrait.png" alt="portrait">
-            </div>
+        <div class="home">
+            <img src="Images/portrait.png" alt="portrait" class="portrait">
             <h1>Front-end Developer</h1>
             <p>Hi. I’m <span>Haikhal Fakhreez</span>, a self-taught Front-end Developer. I create good websites that are fast, responsive, well-design, and easy to use.</p>
+            <div class="social-icon">
+                <a href="https://github.com/haikhalfakhreez" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" class="github"/></a>
+                <a href="https://www.linkedin.com/in/haikhalfakhreez/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" class="linkedin"/></a>
+                <hr id="skill" class="divider-skill"/>
+            </div>
         </div>
+
+
+        <div id="skill" class="skill">
+            <h2>Skills</h2>
+            <div class="skill-icon-container">
+                <div>
+                    <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/html-5.png" class="skill-icon"/><span>HTML</span></div>
+                    <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/css3.png" class="skill-icon"/><span>CSS</span></div>
+                    <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/javascript.png" class="skill-icon"/><span>JavaScript</span></div>
+                </div>
+                <div>
+                    <div class="skill-label"><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" class="skill-icon"/><span>JQuery</span></div>
+                    <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/git.png" class="skill-icon"/><span>git</span></div>
+                    <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="skill-icon"/><span>Bootstrap</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="project" class="divider"/>
+
+        <div class="project">
+            <h2>Projects</h2>
+            <div class="project-top top-space">
+                <div class="project-item">
+                    <div class="img-container img-hover-zoom"><a href="https://haikhalfakhreez.github.io/2048/" target="_blank"><img src="Images/2048.png" alt="2048 Game" class="img-scale"></a></div>
+                    <h3><a href="https://haikhalfakhreez.github.io/2048/" target="_blank">2048 Game</a></h3>
+                    <p class="project-text">This classic 2048 game was made purely using JavaScript code. The base codes were inspired from <a href="https://www.youtube.com/watch?v=aDn2g8XfSMc" target="_blank">Ania Kubów</a>, and I modified it 
+                        to make it my own. I added some behavior changes and minor bug fixes using JavaScript, and style everything using CSS. 
+                        For notes on bugs, read the official documentation <a href="https://github.com/haikhalfakhreez/2048#bugs" target="_blank">here</a>.</p>
+                    <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                </div>
+
+                <div class="project-item">
+                    <div class="img-container img-hover-zoom--btn"><a href="https://haikhalfakhreez.github.io/Buttons/" target="_blank"><img src="Images/buttons.png" alt="Buttons!" class="img-scale"></a></div>
+                    <h3><a href="https://haikhalfakhreez.github.io/Buttons/" target="_blank">Buttons!</a></h3>
+                    <p class="project-text">Buttons is a project I created to showcase the different styles of button using the powerful 
+                        CSS3. The effects can be applied to links, buttons, etc. CSS codes are included. For notes on how to use, read <a href="https://github.com/haikhalfakhreez/buttons#how-to-use" target="_blank">here</a>. <b>Current version: 1.1</b></p>
+                    <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+                </div>
+            </div>
+            <div class="project-top">
+                <div class="project-item">
+                    <div class="img-container img-hover-zoom--sandbox"><a href="https://haikhalfakhreez.github.io/HTML-Sandbox/" target="_blank"><img src="Images/html-sandbox.png" alt="HTML-Sandbox" class="img-scale"></a></div>
+                    <h3><a href="https://haikhalfakhreez.github.io/HTML-Sandbox/" target="_blank">HTML-Sandbox</a></h3>
+                    <p class="project-text">My first project. This is basically my drawing canvas, where I practiced and created amazing website 
+                        functionality and responsiveness using HTML, CSS, JavaScript, and particularly <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. 
+                        Include dark mode, collapsible, and responsive website design using Bootstrap columns. GitHub repo <a href="https://github.com/haikhalfakhreez/HTML-Sandbox" target="_blank">here</a>.</p>
+                    <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span></div>
+                </div>
+
+                <div class="project-item">
+                    <div class="img-container img-hover-zoom--btn"><a href="#homepage"><img src="Images/portfolio.png" alt="Portfolio" class="img-scale"></a></div>
+                    <h3><a href="#homepage">Portfolio</a><span> (current page)</span></h3>
+                    <p class="project-text">Codes were written from scratch. Use to showcase my profile as well as my projects. Constantly 
+                        updated. See <a href="https://github.com/haikhalfakhreez/Portfolio" target="_blank">more</a>.</p>
+                    <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span><span>Flexbox</span><span>Dark Mode</span></div>
+                </div>
+            </div>
+        </div>
+
+        <hr id="about" class="divider"/>
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I love <b>building websites</b>. I work to make a better web; one that is fast, responsive, easy to use, and beautiful. 
+                I also have a passion for design and I believe I have the ability to incorporate <b>seamless user experience</b> in both design and 
+                development. </p>
+            <p>I am a 24-year-old self-taught <b>Front-end Developer</b> from Malaysia. My name is <b>Haikhal Fakhreez</b>. I am a young man with an Environmental 
+                Biotechnology for a degree, but for the past few months I've been using most of my time to grind, educate, and train myself on my passion.</p>
+                
+            <h4>Front-end Development</h4>
+            <p>I use HTML, CSS, and vanilla JavaScript to produce <b>responsive websites</b> that provide users the best experience no matter on what 
+                device they are on.</p>
+
+            <div class="about-skill">
+                <small>My skill:</small>
+                <div>JavaScript (JQuery & vanilla)</div>
+                <div>Responsive CSS</div>
+                <div>Bootstrap</div>
+                <div>Version control (git & GitHub)</div>
+                <div>Photoshop</div>
+                <div>Canva</div>
+            </div>
+            
+            <p>I believe that a good design is very important. Thus I always go an extra mile to make sure the websites I designed looks the best, 
+                without sacrificing fast and smooth user experience.</p>
+            <p>I am also occasionally do <b>design</b> on Photoshop and Canva.</p>
+            <p>As a self-taught, I am highly driven in <b>improving my knowledge</b>. I am currently learning about JavaScript frameworks such as React. I am 
+                also trying to familiarize myself on back-end technologies such as MySQL, PHP, & Python, so that the jump from front-end to full-stack 
+                developer doesn't seem that far out of reach.</p>
+            <p>After spending most of my time doing side projects (<a href="https://github.com/haikhalfakhreez?tab=repositories" target="_blank">see here</a>), I am now 
+                confident on making a <b>career change</b> into <b>web development</b>.</p>
+            <p>If you are looking for someone with my skillset and <b>interested in hiring me</b> or <b>working with me</b>, you can use the 
+                information <a href="#contact">below</a>.</p>
+        </div>
+
+        <hr class="divider clear-space"/>
+
+        <div id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-social-container">
+                <div class="contact-social">
+                    <a href="https://www.linkedin.com/in/haikhalfakhreez/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" class="linkedin"/></a>
+                    <div><a href="https://www.linkedin.com/in/haikhalfakhreez/" target="_blank">LinkedIn</a></div>
+                </div>
+                <p>Let's connect on LinkedIn</p>
+            </div>
+            <div class="contact-social-container">
+                <div class="contact-social">
+                    <a href="https://github.com/haikhalfakhreez" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" class="github"/></a>
+                    <div><a href="https://github.com/haikhalfakhreez" target="_blank">GitHub</a></div>
+                </div>
+                <p>Follow for more open-source project</p>
+            </div>
+            <div class="email">
+                <p>Or contact me through my email at <b>haikhalfakhreez@gmail.com</b></p>
+            </div>
+
+            <small>Copyright &copy; 2020 Haikhal Fakhreez</small>
+        </div>
+
     </section>
     <script src="main.js"></script>
 </body>
