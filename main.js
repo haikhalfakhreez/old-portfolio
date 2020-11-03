@@ -62,6 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // close sidebar when screen resize
+    window.addEventListener('resize', function() {
+        let screenChange = window.matchMedia("(min-width: 768px)");
+        if (screenChange.matches) {
+            sidebarContent.style.visibility = "hidden";
+            sidebarContent.style.transition = "all 0s";
+            burger.classList.remove('open');
+            status = false;
+        }
+    });
+
 
 
 
