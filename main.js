@@ -66,10 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', function() {
         let screenChange = window.matchMedia("(min-width: 768px)");
         if (screenChange.matches) {
+            moon.style.display = "none";
+            sun.style.display = "none";
             sidebarContent.style.visibility = "hidden";
             sidebarContent.style.transition = "all 0s";
             burger.classList.remove('open');
             status = false;
+        }else if (darkModeValue === true){
+            sun.style.display = "block";
+        }else {
+            moon.style.display = "block";
         }
     });
 
