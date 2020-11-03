@@ -141,7 +141,7 @@ body.dark-mode {
     right: 0;
 }
 .burger.open .first {
-   transform: translate(0, 10px) rotate(45deg);
+   transform: translate(0px, 8px) rotate(45deg);
    transition: all 0.5s ease;
 }
 .burger.open .second {
@@ -149,7 +149,7 @@ body.dark-mode {
     transition: all 0.2s ease;
 }
 .burger.open .third {
-    transform: translate(0, -10px) rotate(-45deg);
+    transform: translate(0px, -12px) rotate(-45deg);
     transition: all 0.5s ease;
 }
 .sidebar-content {
