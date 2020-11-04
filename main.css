@@ -666,15 +666,16 @@ h3:hover::before {
     margin-top: 6rem;
 }
 .contact-social-container {
-    background-color:#eee;
+    background-color: #eee;
     padding: 1rem .5rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     max-width: clamp(300px, 80vw, 600px);
+    border-radius: .3rem;
 }
-.contact-social-container p {
-    color: black;
+.contact-social-container.dark-mode {
+    background-color: #353537;
 }
 .contact-social {
     display: flex;
@@ -684,7 +685,7 @@ h3:hover::before {
 }
 .contact-social div a {
     margin-left: .5rem;
-    font-size: clamp(1em, 1.3vw, 1.5em);
+    font-size: clamp(1em, 1.2vw, 1.5em);
     color: #00B4E7;
 }
 .contact-social img {
@@ -693,13 +694,13 @@ h3:hover::before {
 }
 .contact p {
     font-weight: 300;
-    font-size: clamp(1em, 1.3vw, 1.5em);
+    font-size: clamp(1em, 1.2vw, 1.5em);
     line-height: 1.5;
     text-align: center;
 }
 .contact p b {
     font-weight: 500;
-    font-size: clamp(1em, 1.3vw, 1.5em);
+    font-size: clamp(1em, 1.2vw, 1.5em);
     line-height: 1.5;
     margin-bottom: .7rem;
 }
@@ -724,7 +725,7 @@ h3:hover::before {
 
 @media screen and (max-width:534px) {
     .contact-social-container {
-        width: 90%;
-        max-width: 90%;
+        width: 95%;
+        max-width: 95%;
     }
 }
