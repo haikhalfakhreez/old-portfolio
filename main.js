@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // dark mode
     const darkModeBtn = document.querySelector("#toggle1");
     const navBar = document.querySelector(".navbar");
     const darkModeLabel = document.querySelector(".dark-mode-label");
@@ -10,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const html = document.querySelector("html");
     const contactSocials = document.querySelectorAll(".contact-social-container");
 
+
+    // dark mode button - large screen
     darkModeBtn.addEventListener('click', function() {
         if (darkModeBtn.checked) {
             navBar.classList.add("dark-mode");
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const moon = document.querySelector(".moon");
     var darkModeValue = false;
 
+    // dark mode button - emoji
     emoji.addEventListener('click', function() {
         if (darkModeValue === false) {
             darkModeValue = true;

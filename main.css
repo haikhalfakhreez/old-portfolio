@@ -37,7 +37,8 @@ html.dark-mode {
     background-color: #29292B;
 }
 
-/* NAVBAR */
+
+/* ----- Navbar ----- */
 .navbar {
     position: sticky;
     z-index: 200;
@@ -87,6 +88,7 @@ html.dark-mode {
     line-height: 1rem;
     font-weight: bold;
 }
+
 .directories {
     position: absolute;
     top: 50%;
@@ -100,6 +102,7 @@ html.dark-mode {
     text-decoration: none;
     font-size: .9em;
 }
+
 .sun, .moon {
     display: none;
     height: 2rem;
@@ -110,6 +113,7 @@ html.dark-mode {
     transform: translateY(-50%);
     z-index: 102;
 }
+
 .dark-mode-btn {
     position: absolute;
     top: 50%;
@@ -129,6 +133,7 @@ html.dark-mode {
     font-size: .8rem;
     margin-right: .5rem;
 }
+
 .sidebar {
     position: absolute;
     right: 50%;
@@ -204,7 +209,8 @@ html.dark-mode {
     font-size: .9em;
 }
 
-/*---------- Dark Mode Button ----------*/
+
+/*---------- Dark Mode Toggle Button ----------*/
 .toggle {
     position: relative;
     width: 100%;
@@ -266,7 +272,6 @@ input[type="checkbox"]:focus ~ span:before {
     /* box-shadow: 0 0 0 4px rgba(21, 156, 228, 0.4); */
 }
 
-
 @media screen and (max-width:1199px) {
 /* small desktop */
     .name {
@@ -314,7 +319,8 @@ input[type="checkbox"]:focus ~ span:before {
     }
 }
 
-/* section */
+
+/* ----- Section ----- */
 .main-section {
     height: 100%;
     width: 100%;
@@ -383,16 +389,19 @@ input[type="checkbox"]:focus ~ span:before {
     width: auto;
 }
 
-/* skill */
+
+/* Skill */
 .skill {
     margin-top: 2rem;
     padding: 1rem 0;
 }
+
 h2 {
     font-size: clamp(1.3em, calc(1em + 1.8vw), 2.1em);
     margin-bottom: 3rem;
     text-align: center;
 }
+
 .skill-icon-container {
     display: flex;
     flex-direction: row;
@@ -447,7 +456,8 @@ h2 {
     }
 }
 
-/* line divider */
+
+/* Line <hr> Divider */
 .divider {
     border: none;
     padding-top: 3rem;
@@ -462,7 +472,8 @@ h2 {
     margin: auto;
 }
 
-/* project */
+
+/* Project */
 .project {
     margin-top: 6rem;
     max-width: 90%;
@@ -481,8 +492,9 @@ h2 {
 }
 
 .project-item {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
 }
+
 .project-text, .project-text a {
     font-size: clamp(1em, 1.3vw, 1.4em);
     font-weight: 300;
@@ -599,7 +611,7 @@ h3:hover::before {
         flex-direction: column;
     }
     .top-space {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.5rem;
     }
     .project-top .project-item {
         width: 100%;
@@ -609,7 +621,8 @@ h3:hover::before {
     }
 }
 
-/* about me */
+
+/* About Me */
 .about {
     width: 75%;
     margin-top: 6rem;
@@ -657,6 +670,7 @@ h3:hover::before {
     margin-bottom: .7rem;
     color: #1c1c1d;
 }
+
 @media screen and (max-width: 690px) {
     .about {
         width: 90%;
@@ -673,10 +687,12 @@ h3:hover::before {
     }
 }
 
-/* contact */
+
+/* Contact */
 .contact {
     margin-top: 6rem;
 }
+
 .contact-social-container {
     background-color: #eee;
     padding: 1rem .5rem;
@@ -689,6 +705,7 @@ h3:hover::before {
 .contact-social-container.dark-mode {
     background-color: #353537;
 }
+
 .contact-social {
     display: flex;
     flex-direction: row;
@@ -704,6 +721,7 @@ h3:hover::before {
     height: 1.25rem;
     width: 1.25rem;
 }
+
 .contact p {
     font-weight: 300;
     font-size: clamp(1em, 1.2vw, 1.5em);
@@ -716,9 +734,6 @@ h3:hover::before {
     line-height: 1.5;
     margin-bottom: .7rem;
 }
-.email {
-    margin-top: 1.5rem;
-}
 .contact small {
     display: block;
     font-weight: 500;
@@ -727,6 +742,10 @@ h3:hover::before {
     margin-top: 3rem;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.email {
+    margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 690px) {
