@@ -147,10 +147,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.onscroll = function() {stickyNavbar()};
 
-
-
-
-
-
-
 });
