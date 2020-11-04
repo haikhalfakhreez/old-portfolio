@@ -546,14 +546,19 @@ h3:hover::before {
 .img-hover-zoom--btn:hover img {
     transform: scale(1.5);
 }
+.img-hover-zoom--portfolio img {
+    transform-origin: center 90%;
+    transition: transform .4s, visibility .25s ease-in;
+}
+.img-hover-zoom--portfolio:hover img {
+    transform: scale(1.3);
+}
 .img-hover-zoom--sandbox img {
-    transition: transform .4s, filter .4s ease-in-out;
-    filter: blur(2px);
-    transform: scale(1.1);
+    transform-origin: 90% 90%;
+    transition: transform .4s, visibility .25s ease-in;
 }
 .img-hover-zoom--sandbox:hover img {
-    filter: blur(0);
-    transform: scale(1);
+    transform: scale(2);
 }
 
 .span-tag {
@@ -667,6 +672,9 @@ h3:hover::before {
     margin-left: auto;
     margin-right: auto;
     max-width: clamp(300px, 80vw, 600px);
+}
+.contact-social-container p {
+    color: black;
 }
 .contact-social {
     display: flex;

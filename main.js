@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleSidebar.addEventListener('click' , function() {
         if (status === false){
             sidebarContent.style.visibility = "visible";
-            sidebarContent.style.opacity = "1";
+            sidebarContent.style.opacity = ".9";
             burger.classList.add('open');
             status = true;
         }else {
