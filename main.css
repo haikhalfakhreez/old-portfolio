@@ -72,11 +72,15 @@ html.dark-mode {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    vertical-align: middle;
+}
+.logo a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.3rem;
     line-height: 1.5rem;
     font-weight: bold;
-    vertical-align: middle;
+    text-decoration: none;
+    color: #00B4E7;
 }
 .name {
     position: absolute;
@@ -112,6 +116,7 @@ html.dark-mode {
     right: 3.5rem;
     transform: translateY(-50%);
     z-index: 102;
+    cursor: pointer;
 }
 
 .dark-mode-btn {
@@ -503,6 +508,9 @@ h2 {
 .project-text a {
     color: #00B4E7;
 }
+.project-text a:hover {
+    text-decoration: none;
+}
 .project-text b {
     font-size: clamp(1em, 1.3vw, 1.4em);
     font-weight: 400;
@@ -510,7 +518,7 @@ h2 {
 }
 
 h3, h3 a {
-    margin: .8rem 0;
+    margin: .8rem 0 0 0;
     font-weight: 400;
     font-size: clamp(1.2rem, calc(1rem + 1vw), 1.7rem);
     color: #00B4E7;
@@ -542,6 +550,21 @@ h3:hover::before {
     opacity: 1;
     left: -2rem;
 }
+h6 {
+    margin: .7rem 0 1rem 0;
+    display: inline-block;
+    background-color: #eee;
+    padding: .3rem .8rem;
+}
+h6:hover{
+    background-color: #ddd;
+}
+h6 a {
+    font-weight: 300;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #555;
+}
 
 .img-container {
     height: auto;
@@ -549,7 +572,7 @@ h3:hover::before {
     overflow: hidden;
     position: relative;
     display: block;
-    border: 1px solid rgba(243, 243, 243, 1);
+    border: 1px solid rgba(220, 220, 220, 1);
 }
 .img-scale {
     width: 100%;
@@ -564,11 +587,11 @@ h3:hover::before {
     transform: scale(2);
 }
 .img-hover-zoom--btn img {
-    transform-origin: center 90%;
+    transform-origin: center bottom;
     transition: transform .4s, visibility .25s ease-in;
 }
 .img-hover-zoom--btn:hover img {
-    transform: scale(1.5);
+    transform: scale(1.35);
 }
 .img-hover-zoom--portfolio img {
     transform-origin: center 90%;
@@ -578,11 +601,11 @@ h3:hover::before {
     transform: scale(1.3);
 }
 .img-hover-zoom--sandbox img {
-    transform-origin: 90% 90%;
+    transform-origin: center center;
     transition: transform .4s, visibility .25s ease-in;
 }
 .img-hover-zoom--sandbox:hover img {
-    transform: scale(2);
+    transform: scale(1.2);
 }
 
 .span-tag {
@@ -597,6 +620,16 @@ h3:hover::before {
     margin-right: .5rem;
     border-radius: .2rem;
     font-size: .75em;
+}
+
+.info-text {
+    padding-bottom: 1rem;
+}
+.info-text a {
+    color: #00B4E7;
+}
+.info-text a:hover {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -619,6 +652,9 @@ h3:hover::before {
     .project-item:last-child {
         margin-bottom: 0rem;
     }
+    .info-text {
+        padding-top: 3rem;
+    }
 }
 
 
@@ -639,6 +675,9 @@ h3:hover::before {
 }
 .about p a {
     color: #00B4E7;
+}
+.about p a:hover {
+    text-decoration: none;
 }
 .about p b {
     font-size: clamp(1em, 1.4vw, 1.5em);
@@ -717,6 +756,9 @@ h3:hover::before {
     font-size: clamp(1em, 1.2vw, 1.5em);
     color: #00B4E7;
 }
+.contact-social div a:hover {
+    text-decoration: none;
+}
 .contact-social img {
     height: 1.25rem;
     width: 1.25rem;
@@ -746,6 +788,9 @@ h3:hover::before {
 
 .email {
     margin-top: 1.5rem;
+}
+.email p a:hover {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 690px) {
