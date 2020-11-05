@@ -126,6 +126,7 @@ html.dark-mode {
     transform: translateY(-50%);
 }
 .dark-mode-label {
+    user-select: none;
     padding: .3rem .5rem .3rem .9rem;
     border-radius: .7rem;
     box-shadow: .4rem .4rem .4rem rgba(200, 200, 200, .8), -.4rem -.4rem .4rem rgba(255, 255, 255, .8);
@@ -564,6 +565,7 @@ h6 a {
     font-size: .9rem;
     text-decoration: none;
     color: #555;
+    user-select: none;
 }
 
 .img-container {
@@ -620,6 +622,7 @@ h6 a {
     margin-right: .5rem;
     border-radius: .2rem;
     font-size: .75em;
+    user-select: none;
 }
 
 .info-text {
@@ -788,6 +791,9 @@ h6 a {
 
 .email {
     margin-top: 1.5rem;
+}
+.email p a {
+    color: #00B4E7;
 }
 .email p a:hover {
     text-decoration: none;
