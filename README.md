@@ -1,8 +1,10 @@
 # Personal Portfolio
 
-<img src="https://img.icons8.com/plasticine/100/000000/resume-website.png"/>
+Portfolio was made to showcase my work. Constantly updated.
 
-Check out [my portfolio](https://haikhalfakhreez.github.io/Portfolio/)!
+<a href="https://haikhalfakhreez.github.io/Portfolio/" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/resume-website.png"/></a>
+
+Check out <a href="https://haikhalfakhreez.github.io/Portfolio/" target="_blank">my portfolio</a>!
 
 ## Features implemented
 
