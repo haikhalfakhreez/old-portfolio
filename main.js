@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const h3Btns = document.querySelectorAll("h3, h3 a");
     const html = document.querySelector("html");
     const contactSocials = document.querySelectorAll(".contact-social-container");
+    var darkModeValue = false;
 
 
     // dark mode button - large screen
     darkModeBtn.addEventListener('click', function() {
-        if (darkModeBtn.checked) {
+        if (darkModeBtn.checked && darkModeValue === false) {
+            darkModeValue = true;
             navBar.classList.add("dark-mode");
             darkModeLabel.classList.add("dark-mode");
             mainSection.classList.add("dark-mode");
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 contactSocial.classList.add("dark-mode");
             });
         }else {
+            darkModeValue = false;
             navBar.classList.remove("dark-mode");
             darkModeLabel.classList.remove("dark-mode");
             mainSection.classList.remove("dark-mode");
@@ -46,12 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const emoji = document.querySelector(".emoji");
     const sun = document.querySelector(".sun");
     const moon = document.querySelector(".moon");
-    var darkModeValue = false;
 
     // dark mode button - emoji
     emoji.addEventListener('click', function() {
         if (darkModeValue === false) {
             darkModeValue = true;
+            darkModeBtn.checked = true;
             moon.style.display = "none";
             sun.style.display = "block";
             navBar.classList.add("dark-mode");
@@ -69,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }else if (darkModeValue === true) {
             darkModeValue = false;
+            darkModeBtn.checked = false;
             sun.style.display = "none";
             moon.style.display = "block";
             navBar.classList.remove("dark-mode");
@@ -122,8 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // close sidebar when screen resize
     window.addEventListener('resize', function() {
-        let screenChange = window.matchMedia("(min-width: 768px)");
-        if (screenChange.matches) {
+        let screenMin768 = window.matchMedia("(min-width: 768px)");
+        if (screenMin768.matches) {
             moon.style.display = "none";
             sun.style.display = "none";
             sidebarContent.style.visibility = "hidden";
@@ -136,17 +140,5 @@ document.addEventListener('DOMContentLoaded', () => {
             moon.style.display = "block";
         }
     });
-
-    // sticky navbar
-    const sticky = navBar.offsetTop;
-    
-    function stickyNavbar() {
-        if (window.pageYOffset >= sticky) {
-            navBar.classList.add("sticky")
-        } else {
-            navBar.classList.remove("sticky");
-        }
-    }
-    window.onscroll = function() {stickyNavbar()};
 
 });
