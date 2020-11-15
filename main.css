@@ -7,7 +7,8 @@
 
     --main-color: rgba(250, 250, 250, 1);
     --font-color: #00B4E7;
-    
+    --darker-blue: rgb(1, 66, 165);
+        
     --dark-mode: #29292B;
     --navbar-shadow-light: .4rem .4rem .4rem rgba(200, 200, 200, .8), -.4rem -.4rem .4rem rgba(255, 255, 255, .8);
     --navbar-shadow-dark: .4rem .4rem .4rem #1c1c1d, -.4rem -.4rem .4rem rgba(83, 83, 84, .5);
@@ -23,7 +24,9 @@ body {
     background-color: var(--main-color);
 }
 
-/* ----- Scroll Bar ----- */
+/* ------------------------------------------------------------------------
+                                Scroll Bar
+------------------------------------------------------------------------ */
 body::-webkit-scrollbar {
     width: .5rem;
 }
@@ -51,7 +54,9 @@ html.dark-mode {
     visibility: hidden;
 }
 
-/* ----- Navbar ----- */
+/* ------------------------------------------------------------------------
+                                    Navbar
+------------------------------------------------------------------------ */
 .navbar {
     position: fixed;
     width: 100%;
@@ -76,6 +81,7 @@ html.dark-mode {
     padding: .5rem 0;
 }
 
+/*---------- Logo ----------*/
 .logo a {
     font-family: var(--segoe);
     font-size: 2.3rem;
@@ -91,6 +97,7 @@ html.dark-mode {
       0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
+/*---------- Directories ----------*/
 .directories {
     margin-left: auto;
     margin-right: 1.5rem;
@@ -102,7 +109,11 @@ html.dark-mode {
     text-decoration: none;
     font-size: .9em;
 }
+.directories a:hover {
+    color: var(--darker-blue);
+}
 
+/*---------- Emoji ----------*/
 #sun, #moon {
     display: none;
     z-index: 102;
@@ -115,6 +126,7 @@ html.dark-mode {
     font-size: 17px;
 }
 
+/*---------- Dark Mode Button ----------*/
 .dark-mode-label {
     user-select: none;
     padding: .3rem .5rem .3rem .9rem;
@@ -130,13 +142,7 @@ html.dark-mode {
     margin-right: .5rem;
 }
 
-.sidebar {
-    z-index: 100;
-    height: 48px;
-    width: 40px;
-    display: none;
-}
-
+/*---------- Burger ----------*/
 .burger {
     position: relative;
     width: 100%;
@@ -183,6 +189,14 @@ html.dark-mode {
     transition: all 0.5s ease;
 }
 
+/*---------- Sidebar ----------*/
+.sidebar {
+    z-index: 100;
+    height: 48px;
+    width: 40px;
+    display: none;
+}
+
 .sidebar-content {
     position: absolute;
     width: 100%;
@@ -204,7 +218,6 @@ html.dark-mode {
     color: white;
     font-size: .9em;
 }
-
 
 /*---------- Dark Mode Toggle Button ----------*/
 .toggle {
@@ -277,14 +290,12 @@ input[type="checkbox"]:focus ~ span:before {
         display: none;
     }
 }
-
 @media screen and (max-width: 969px) {
 /* large tablet */
     .dark-mode-label small {
         display: none;
     }
-}
-    
+} 
 @media screen and (max-width: 767px) {
     /* medium tablet */
     .navbar-container {
@@ -311,19 +322,23 @@ input[type="checkbox"]:focus ~ span:before {
 }
 
 
-/* ----- Section ----- */
-.main-section {
+/* ------------------------------------------------------------------------
+                              Main Content
+------------------------------------------------------------------------ */
+.main-content {
     height: 100%;
     width: 100%;
     padding: 4rem 1rem 0rem 1rem;
 }
-.main-section.dark-mode{
+.main-content.dark-mode{
     background-color: var(--dark-mode);
     color: white;
 }
 
 
-/* home */
+/* ------------------------------------------------------------------------
+                                Front Page
+------------------------------------------------------------------------ */
 .home {
     display: flex;
     flex-direction: column;
@@ -333,6 +348,7 @@ input[type="checkbox"]:focus ~ span:before {
     margin: auto;
     height: 91vh;
 }
+
 .home h1 {
     font-size: clamp(1.5em, calc(1em + 2vw), 2.7em);
     line-height: 1.2;
@@ -350,12 +366,6 @@ input[type="checkbox"]:focus ~ span:before {
     font-weight: 500;
     font-size: clamp(1em, 1.6vw, 1.5em);
     line-height: 1.8;
-}
-
-@media screen and (min-width: 600px) and (max-width:990px) {
-    .home {
-        max-width: 80%;
-    }
 }
 
 .portrait {
@@ -381,8 +391,15 @@ input[type="checkbox"]:focus ~ span:before {
     width: auto;
 }
 
+@media screen and (min-width: 600px) and (max-width:990px) {
+    .home {
+        max-width: 80%;
+    }
+}
 
-/* Skill */
+/* ------------------------------------------------------------------------
+                                  Skill
+------------------------------------------------------------------------ */
 .skill {
     margin-top: 2rem;
     padding: 1rem 0;
@@ -401,10 +418,10 @@ h2 {
     width: 80%;
     margin: auto;
 }
-.skill-icon-container div {
+.skill-icon-container section {
     width: 48%;
 }
-.skill-icon-container div .skill-label {
+.skill-icon-container section .skill-label {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -416,14 +433,14 @@ h2 {
     border-radius: 1rem;
     box-shadow: var(--navbar-shadow-light);
 }
-.skill-icon-container div .skill-label.dark-mode {
+.skill-icon-container section .skill-label.dark-mode {
     background-color: var(--dark-mode);
     box-shadow: var(--navbar-shadow-dark);
 }
-.skill-icon-container div:last-child {
+.skill-icon-container section:last-child {
     margin-bottom: 0;
 }
-.skill-icon-container div span {
+.skill-icon-container section span {
     vertical-align: middle;
     font-size: clamp(1em, 1.6vw, 1.5em);
     margin-left: .8rem;
@@ -442,14 +459,14 @@ h2 {
     .skill-icon-container {
         flex-direction: column;
     }
-    .skill-icon-container div {
+    .skill-icon-container section {
         width: 100%;
         margin-bottom: 1.2rem;
     }
 }
 
 
-/* Line <hr> Divider */
+/*------------ Line <hr> Divider ----------*/
 .divider {
     border: none;
     padding-top: 3rem;
@@ -465,7 +482,9 @@ h2 {
 }
 
 
-/* Project */
+/* ------------------------------------------------------------------------
+                                Project
+------------------------------------------------------------------------ */
 .project {
     margin-top: 6rem;
     max-width: 90%;
@@ -568,6 +587,7 @@ h6 a {
     height: auto;
     display: block;
 }
+
 .img-hover-zoom--2048 img {
     transform-origin: center top;
     transition: transform .3s ease-in;
@@ -575,6 +595,7 @@ h6 a {
 .img-hover-zoom--2048:hover img {
     transform: scale(1.1);
 }
+
 .img-hover-zoom--btn img {
     transform-origin: center bottom;
     transition: transform .3s ease-in;
@@ -582,6 +603,7 @@ h6 a {
 .img-hover-zoom--btn:hover img {
     transform: scale(1.1);
 }
+
 .img-hover-zoom--portfolio img {
     transform-origin: center 90%;
     transition: transform .3s ease-in;
@@ -589,6 +611,7 @@ h6 a {
 .img-hover-zoom--portfolio:hover img {
     transform: scale(1.1);
 }
+
 .img-hover-zoom--hvr-animations img {
     transform-origin: center center;
     transition: transform .3s ease-in;
@@ -648,7 +671,9 @@ h6 a {
 }
 
 
-/* About Me */
+/* ------------------------------------------------------------------------
+                                  About
+------------------------------------------------------------------------ */
 .about {
     width: 75%;
     margin-top: 6rem;
@@ -718,7 +743,9 @@ h6 a {
 }
 
 
-/* Contact */
+/* ------------------------------------------------------------------------
+                                Contact
+------------------------------------------------------------------------ */
 .contact {
     margin-top: 6rem;
 }
@@ -777,6 +804,7 @@ h6 a {
     text-align: center;
 }
 
+/*---------- Email ----------*/
 .email {
     margin-top: 1.5rem;
 }
@@ -792,7 +820,6 @@ h6 a {
         margin-top: 4rem;
     }
 }
-
 @media screen and (max-width:534px) {
     .contact-social-container {
         width: 95%;

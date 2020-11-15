@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeBtn = document.querySelector("#toggle1");
     const navBar = document.querySelector(".navbar");
     const darkModeLabel = document.querySelector(".dark-mode-label");
-    const mainSection = document.querySelector(".main-section");
+    const mainSection = document.querySelector(".main-content");
     const skillLabels = document.querySelectorAll(".skill-label");
     const h3Btns = document.querySelectorAll("h3, h3 a");
     const html = document.querySelector("html");
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // close sidebar when click on body
-    const section = document.querySelector(".main-section");
+    const section = document.querySelector(".main-content");
     section.addEventListener('click', function() {
         if (status === true) {
             sidebarContent.style.visibility = "hidden";

@@ -11,6 +11,8 @@
     <meta name="author" content="Haikhal Fakhreez">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora&family=Inter:wght@400;500;600&family=Poppins:wght@400;600&family=Spectral+SC&family=Merriweather+Sans:wght@300;400&family=Roboto&family=Source+Code+Pro&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet & JavaScript -->
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 
@@ -20,7 +22,9 @@
 <body>
     <a class="anchor" id="homepage"></a>
 
-    <!-- Nav Bar -->
+<!------------------------------------------------------------------------------------------------------
+                                                Navbar 
+------------------------------------------------------------------------------------------------------->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo"><a href="#homepage">&lt;hf/&gt;</a></div>
@@ -72,10 +76,13 @@
             </div>
     </nav>
 
-    <section class="main-section">
+<!------------------------------------------------------------------------------------------------------
+                                              Main Content 
+------------------------------------------------------------------------------------------------------->
+    <main class="main-content">
 
-        <!-- front page -->
-        <div class="home">
+        <!---------- front page ---------->
+        <section class="home">
             <img src="Images/portrait.png" alt="portrait" class="portrait">
             <h1>Front-end Developer</h1>
                 <p>Hi. I’m <span>Haikhal Fakhreez</span>, a self-taught Front-end Developer. I create good websites that are fast, responsive, well-design, and easy to use.</p>
@@ -84,33 +91,33 @@
                     <a href="https://www.linkedin.com/in/haikhalfakhreez/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" class="linkedin"/></a>
                 <hr id="skill" class="divider-skill"/>
                 </div>
-        </div>
+        </section>
 
-        <!-- skills -->
-        <div class="skill">
+        <!---------- skills ---------->
+        <section class="skill">
             <a class="anchor" id="skill"></a>
             <h2>Skills</h2>
                 <div class="skill-icon-container">
-                    <div>
+                    <section>
                         <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/html-5.png" class="skill-icon"/><span>HTML</span></div>
                         <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/css3.png" class="skill-icon"/><span>CSS</span></div>
                         <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/javascript.png" class="skill-icon"/><span>JavaScript</span></div>
-                    </div>
-                    <div>
+                    </section>
+                    <section>
                         <div class="skill-label"><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" class="skill-icon"/><span>JQuery</span></div>
                         <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/git.png" class="skill-icon"/><span>git</span></div>
                         <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="skill-icon"/><span>Bootstrap</span></div>
-                    </div>
+                    </section>
                 </div>
-        </div>
+        </section>
 
         <hr class="divider"/>
 
-        <!-- projects -->
-        <div class="project">
+        <!---------- project ---------->
+        <section class="project">
             <a class="anchor" id="project"></a>
             <h2>Projects</h2>
-                <div class="project-top top-space">
+                <section class="project-top top-space">
 
                     <!-- Hover Animations -->
                     <div class="project-item">
@@ -134,9 +141,9 @@
                     </div>
 
                     
-                </div>
+                </section>
 
-                <div class="project-top">
+                <section class="project-top">
 
                     <!-- Buttons -->
                     <div class="project-item">
@@ -157,14 +164,14 @@
                         updated. See <a href="https://github.com/haikhalfakhreez/Portfolio" target="_blank">more</a>.</p>
                         <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span><span>Flexbox</span><span>Dark Mode</span></div>
                     </div>
-                </div>
+                </section>
                 <p class="info-text"><a href="https://github.com/haikhalfakhreez/repositories" target="_blank">See other projects on GitHub</a></p>
-        </div>
+        </section>
 
         <hr class="divider"/>
 
-        <!-- about -->
-        <div class="about">
+        <!---------- about ---------->
+        <section class="about">
             <a class="anchor" id="about"></a>
             <h2>About Me</h2>
                 <p>I love <b>building websites</b>. I work to make a better web; one that is fast, responsive, easy to use, and beautiful. 
@@ -188,6 +195,7 @@
                     <div>Photoshop</div>
                     <div>Canva</div>
                 </div>
+
                 <p>I believe that a good design is very important. Thus I always go an extra mile to make sure the websites I designed looks the best, 
                    without sacrificing fast and smooth user experience.</p>
                 <p>I am also occasionally do <b>design</b> on Photoshop and Canva.</p>
@@ -198,12 +206,12 @@
                    confident on making a <b>career change</b> into <b>web development</b>.</p>
                 <p>If you are looking for someone with my skillset and <b>interested in hiring me</b> or <b>working with me</b>, you can use the 
                    information <a href="#contact">below</a>.</p>
-        </div>
+        </section>
 
         <hr class="divider clear-space"/>
 
-        <!-- contact & footer -->
-        <div class="contact">
+        <!---------- contact & footer ---------->
+        <section class="contact">
             <a class="anchor" id="contact"></a>
             <h2>Contact</h2>
                 <div class="contact-social-container">
@@ -213,6 +221,8 @@
                     </div>
                     <p>Let's connect on LinkedIn</p>
                 </div>
+
+                <!-- social icon -->
                 <div class="contact-social-container">
                     <div class="contact-social">
                         <a href="https://github.com/haikhalfakhreez" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" class="github"/></a>
@@ -220,6 +230,8 @@
                     </div>
                     <p>Follow for more open-source project</p>
                 </div>
+
+                <!-- email -->
                 <div class="email">
                     <p>Or contact me through my email at 
                         <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=haikhalfakhreez@gmail.com" target="_blank">
@@ -228,7 +240,7 @@
                 </div>
 
                 <small>Copyright &copy; 2020 Haikhal Fakhreez</small>
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 </html>
