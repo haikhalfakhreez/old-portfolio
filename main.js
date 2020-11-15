@@ -8,47 +8,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const h3Btns = document.querySelectorAll("h3, h3 a");
     const html = document.querySelector("html");
     const contactSocials = document.querySelectorAll(".contact-social-container");
+    const logo = document.querySelector(".logo a")
     var darkModeValue = false;
 
 
     // dark mode button - large screen
     darkModeBtn.addEventListener('click', function() {
-        if (darkModeBtn.checked && darkModeValue === false) {
+        if (darkModeValue === false) {
             darkModeValue = true;
-            navBar.classList.add("dark-mode");
-            darkModeLabel.classList.add("dark-mode");
-            mainSection.classList.add("dark-mode");
-            html.classList.add("dark-mode");
+            navBar.classList.toggle("dark-mode");
+            darkModeLabel.classList.toggle("dark-mode");
+            mainSection.classList.toggle("dark-mode");
+            html.classList.toggle("dark-mode");
+            logo.classList.toggle("dark-mode")
             skillLabels.forEach(function(skillLabel) {
-                skillLabel.classList.add("dark-mode");
+                skillLabel.classList.toggle("dark-mode");
             });
             h3Btns.forEach(function(h3Btn) {
-                h3Btn.classList.add("dark-mode");
+                h3Btn.classList.toggle("dark-mode");
             });
             contactSocials.forEach(function(contactSocial) {
-                contactSocial.classList.add("dark-mode");
+                contactSocial.classList.toggle("dark-mode");
             });
         }else {
             darkModeValue = false;
-            navBar.classList.remove("dark-mode");
-            darkModeLabel.classList.remove("dark-mode");
-            mainSection.classList.remove("dark-mode");
-            html.classList.remove("dark-mode");
+            navBar.classList.toggle("dark-mode");
+            darkModeLabel.classList.toggle("dark-mode");
+            mainSection.classList.toggle("dark-mode");
+            html.classList.toggle("dark-mode");
+            logo.classList.toggle("dark-mode")
             skillLabels.forEach(function(skillLabel) {
-                skillLabel.classList.remove("dark-mode");
+                skillLabel.classList.toggle("dark-mode");
             });
             h3Btns.forEach(function(h3Btn) {
-                h3Btn.classList.remove("dark-mode");
+                h3Btn.classList.toggle("dark-mode");
             });
             contactSocials.forEach(function(contactSocial) {
-                contactSocial.classList.remove("dark-mode");
+                contactSocial.classList.toggle("dark-mode");
             });
         }
     });
 
     const emoji = document.querySelector(".emoji");
-    const sun = document.querySelector(".sun");
-    const moon = document.querySelector(".moon");
+    const sun = document.querySelector("#sun");
+    const moon = document.querySelector("#moon");
 
     // dark mode button - emoji
     emoji.addEventListener('click', function() {
@@ -57,36 +60,40 @@ document.addEventListener('DOMContentLoaded', () => {
             darkModeBtn.checked = true;
             moon.style.display = "none";
             sun.style.display = "block";
-            navBar.classList.add("dark-mode");
-            darkModeLabel.classList.add("dark-mode");
-            mainSection.classList.add("dark-mode");
-            html.classList.add("dark-mode");
+
+            navBar.classList.toggle("dark-mode");
+            darkModeLabel.classList.toggle("dark-mode");
+            mainSection.classList.toggle("dark-mode");
+            html.classList.toggle("dark-mode");
+            logo.classList.toggle("dark-mode")
             skillLabels.forEach(function(skillLabel) {
-                skillLabel.classList.add("dark-mode");
+                skillLabel.classList.toggle("dark-mode");
             });
             h3Btns.forEach(function(h3Btn) {
-                h3Btn.classList.add("dark-mode");
+                h3Btn.classList.toggle("dark-mode");
             });
             contactSocials.forEach(function(contactSocial) {
-                contactSocial.classList.add("dark-mode");
+                contactSocial.classList.toggle("dark-mode");
             });
         }else if (darkModeValue === true) {
             darkModeValue = false;
             darkModeBtn.checked = false;
             sun.style.display = "none";
             moon.style.display = "block";
-            navBar.classList.remove("dark-mode");
-            darkModeLabel.classList.remove("dark-mode");
-            mainSection.classList.remove("dark-mode");
-            html.classList.remove("dark-mode");
+
+            navBar.classList.toggle("dark-mode");
+            darkModeLabel.classList.toggle("dark-mode");
+            mainSection.classList.toggle("dark-mode");
+            html.classList.toggle("dark-mode");
+            logo.classList.toggle("dark-mode")
             skillLabels.forEach(function(skillLabel) {
-                skillLabel.classList.remove("dark-mode");
+                skillLabel.classList.toggle("dark-mode");
             });
             h3Btns.forEach(function(h3Btn) {
-                h3Btn.classList.remove("dark-mode");
+                h3Btn.classList.toggle("dark-mode");
             });
             contactSocials.forEach(function(contactSocial) {
-                contactSocial.classList.remove("dark-mode");
+                contactSocial.classList.toggle("dark-mode");
             });
         }
     });
