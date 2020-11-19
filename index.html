@@ -18,6 +18,10 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e699a2c4a5.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <a class="anchor" id="homepage"></a>
@@ -83,10 +87,10 @@
 
         <!---------- front page ---------->
         <section class="home">
-            <img src="Images/portrait.png" alt="portrait" class="portrait">
-            <h1>Front-end Developer</h1>
-                <p>Hi. I’m <span>Haikhal Fakhreez</span>, a self-taught Front-end Developer. I create good websites that are fast, responsive, well-design, and easy to use.</p>
-                <div class="social-icon">
+            <img src="Images/portrait.png" alt="portrait" class="portrait" data-aos="fade-down" data-aos-duration="1000">
+            <h1 data-aos="fade-up" data-aos-duration="500">Front-end Developer</h1>
+                <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Hi. I’m <span>Haikhal Fakhreez</span>, a self-taught Front-end Developer. I create good websites that are fast, responsive, well-design, and easy to use.</p>
+                <div class="social-icon" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600" data-aos-offset="50">
                     <a href="https://github.com/haikhalfakhreez" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" class="github"/></a>
                     <a href="https://www.linkedin.com/in/haikhalfakhreez/" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" class="linkedin"/></a>
                 <hr id="skill" class="divider-skill"/>
@@ -94,19 +98,19 @@
         </section>
 
         <!---------- skills ---------->
-        <section class="skill">
+        <section class="skill" style="overflow-x: hidden; overflow-y: hidden;">
             <a class="anchor" id="skill"></a>
             <h2>Skills</h2>
                 <div class="skill-icon-container">
                     <section>
-                        <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/html-5.png" class="skill-icon"/><span>HTML</span></div>
-                        <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/css3.png" class="skill-icon"/><span>CSS</span></div>
-                        <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/javascript.png" class="skill-icon"/><span>JavaScript</span></div>
+                        <div class="skill-label" data-aos="fade-right" data-aos-duration="800"><img src="https://img.icons8.com/color/48/000000/html-5.png" class="skill-icon"/><span>HTML</span></div>
+                        <div class="skill-label" data-aos="fade-right" data-aos-duration="800"><img src="https://img.icons8.com/color/48/000000/css3.png" class="skill-icon"/><span>CSS</span></div>
+                        <div class="skill-label" data-aos="fade-right" data-aos-duration="800"><img src="https://img.icons8.com/color/48/000000/javascript.png" class="skill-icon"/><span>JavaScript</span></div>
                     </section>
                     <section>
-                        <div class="skill-label"><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" class="skill-icon"/><span>JQuery</span></div>
-                        <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/git.png" class="skill-icon"/><span>git</span></div>
-                        <div class="skill-label"><img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="skill-icon"/><span>Bootstrap</span></div>
+                        <div class="skill-label" data-aos="fade-left" data-aos-duration="800"><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" class="skill-icon"/><span>JQuery</span></div>
+                        <div class="skill-label" data-aos="fade-left" data-aos-duration="800"><img src="https://img.icons8.com/color/48/000000/git.png" class="skill-icon"/><span>git</span></div>
+                        <div class="skill-label" data-aos="fade-left" data-aos-duration="800"><img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="skill-icon"/><span>Bootstrap</span></div>
                     </section>
                 </div>
         </section>
@@ -125,7 +129,7 @@
                         <h3><a href="https://haikhalfakhreez.github.io/Hover-Animations/" target="_blank">Hover Animations</a></h3>
                         <h6><a href="https://github.com/haikhalfakhreez/Hover-Animations" target="_blank">See code</a></h6>
                         <p class="project-text">A collection of CSS3-powered effects. Easily copy & paste the effect that you want. All Hover Animations are made using single element, prioritizing 
-                           simplicity over complexity. No SVG and complex CSS involved.<br><b>Current&nbsp;version:&nbsp;1.0</b></p>
+                           simplicity over complexity. No SVG and complex CSS involved.</p>
                         <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Highlight.js</span></div>
                     </div>
 
@@ -151,7 +155,7 @@
                         <h3><a href="https://haikhalfakhreez.github.io/Buttons/" target="_blank">Buttons!</a></h3>
                         <h6><a href="https://github.com/haikhalfakhreez/buttons" target="_blank">See code</a></h6>
                         <p class="project-text">Buttons is a project I created to showcase the different styles of button using CSS3. The effects can be 
-                        applied to links, buttons, etc. CSS codes are included. For notes on how to use, read <a href="https://github.com/haikhalfakhreez/buttons#how-to-use" target="_blank">here</a>.<br><b>Current&nbsp;version:&nbsp;1.1</b></p>
+                        applied to links, buttons, etc. CSS codes are included. For notes on how to use, read <a href="https://github.com/haikhalfakhreez/buttons#how-to-use" target="_blank">here</a>.</p>
                         <div class="span-tag"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
                     </div>
 
@@ -242,5 +246,9 @@
                 <small>Copyright &copy; 2020 Haikhal Fakhreez</small>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

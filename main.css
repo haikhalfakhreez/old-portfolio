@@ -100,7 +100,7 @@ html.dark-mode {
 /*---------- Directories ----------*/
 .directories {
     margin-left: auto;
-    margin-right: 1.5rem;
+    margin-right: 2.6rem;
 }
 .directories a {
     display: inline-block;
@@ -516,11 +516,6 @@ h2 {
 }
 .project-text a:hover {
     text-decoration: none;
-}
-.project-text b {
-    font-size: clamp(1em, 1.3vw, 1.4em);
-    font-weight: 400;
-    font-size: .8em;
 }
 
 h3, h3 a {
