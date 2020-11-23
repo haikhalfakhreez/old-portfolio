@@ -17,3 +17,4 @@ Check out <a href="https://haikhalfakhreez.github.io/Portfolio/" target="_blank"
   - HTML
   - CSS
   - JavaScript
+  - AOS.js
