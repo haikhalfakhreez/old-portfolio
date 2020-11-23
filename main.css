@@ -599,11 +599,11 @@ h6 a {
     transform: scale(1.1);
 }
 
-.img-hover-zoom--portfolio img {
+.img-hover-zoom--pokemon img {
     transform-origin: center 90%;
     transition: transform .3s ease-in;
 }
-.img-hover-zoom--portfolio:hover img {
+.img-hover-zoom--pokemon:hover img {
     transform: scale(1.1);
 }
 
